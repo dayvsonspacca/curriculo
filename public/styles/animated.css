@@ -17,3 +17,23 @@
 .slide-in-left.active {
   animation-play-state: running;
 }
+
+.delay-1 {
+  animation-duration: 0.5s;
+}
+
+.delay-2 {
+  animation-duration: 1s;
+}
+
+.delay-3 {
+  animation-duration: 1.5s;
+}
+
+.delay-4 {
+  animation-duration: 2s;
+}
+
+.delay-5 {
+  animation-duration: 2.5s;
+}
