@@ -162,6 +162,10 @@ hr {
 .tooltip {
   position: relative;
   display: inline-block;
+  transition: all ease-in-out 0.2s;
+}
+.tooltip:hover {
+  transform: scale(1.1);
 }
 
 .tooltip .tooltiptext {
