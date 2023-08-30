@@ -12,7 +12,6 @@ function drawAnimation(params) {
   const context = canvas.getContext('2d');
   context.lineWidth = 0.21;
   
-  const maxStars = 150;
   const numberOfStars = Math.floor((canvas.width * canvas.height) / 8000);
   const minDistanceForLine = 120;
   
@@ -62,7 +61,7 @@ function drawAnimation(params) {
         if (distance <= minDistanceForLine) {
           const opacity = 1 - distance / minDistanceForLine * 0.9;
   
-          context.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+          context.strokeStyle = `rgba(255, 215, 0, ${opacity})`;
           context.beginPath();
           context.moveTo(star.posX, star.posY);
           context.lineTo(otherStar.posX, otherStar.posY);
