@@ -1,39 +1,10 @@
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.animation-on-scroll {
+  opacity: 0; 
+  transform: translateY(80px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-.slide-in-left {
-  animation: slideInLeft 0.5s ease-in-out forwards;
-  animation-play-state: paused;
-}
-
-.slide-in-left.active {
-  animation-play-state: running;
-}
-
-.delay-1 {
-  animation-duration: 0.5s;
-}
-
-.delay-2 {
-  animation-duration: 1s;
-}
-
-.delay-3 {
-  animation-duration: 1.5s;
-}
-
-.delay-4 {
-  animation-duration: 2s;
-}
-
-.delay-5 {
-  animation-duration: 2.5s;
+.animation-on-scroll.show {
+  opacity: 1; 
+  transform: translateY(0);
 }
