@@ -131,18 +131,49 @@ hr {
   border-radius: 0.2rem;
 }
 
-.projects {
+.project {
+  position: relative;
+  background: var(--clr--primary--700);
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
-.project {
-  background-color: var(--clr--primary--700);
-  border-radius: 0.2rem;
-  padding: 1rem;
-  transition: all ease-in-out 0.2s;
+.repo-viwer::before, .repo-viwer::after {
+  /* background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000); */
+  background: linear-gradient(45deg, #ff9900, #66ccff);
+}
+
+.landing-pages::before, .landing-pages::after {
+  background: linear-gradient(45deg, #ff99cc, #00ff00);
+}
+
+.abraz-loc::before, .abraz-loc::after {
+  background: linear-gradient(45deg, #ae2012, #005F73);
+}
+
+.super-nutri-app::before, .super-nutri-app::after {
+  background: linear-gradient(45deg, #e712b9, #BB3E03);
+}
+
+.chat-php::before, .chat-php::after {
+  background: linear-gradient(45deg, #777BB4, #1572B6);
+}
+
+.project::before, .project::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background-size: 300%;
+  animation: spin 8s linear alternate infinite;
+}
+
+.project::before, .project::after {
+  filter: blur(5px);
 }
 
 .project .header {

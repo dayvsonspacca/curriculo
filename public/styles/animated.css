@@ -8,3 +8,12 @@
   opacity: 1; 
   transform: translateY(0);
 }
+
+@keyframes spin {
+  to {
+    background-position: 0;
+  }
+  from {
+    background-position: 100%;
+  }
+}
