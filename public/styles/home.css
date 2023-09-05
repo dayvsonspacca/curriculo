@@ -172,7 +172,7 @@ hr {
 }
 
 .project:hover::before, .project:hover::after {
-  animation: spin 2s linear alternate infinite;
+  animation: spin 1s linear alternate infinite;
 }
 
 .project .header {
