@@ -161,6 +161,10 @@ hr {
   background: linear-gradient(45deg, #777BB4, #1572B6);
 }
 
+.cat-facts::before, .cat-facts::after {
+  background: linear-gradient(45deg, #e5989b, #4a5759);
+}
+
 .project::before, .project::after {
   content: '';
   position: absolute;
