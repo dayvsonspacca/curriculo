@@ -1,11 +1,11 @@
 .animation-on-scroll {
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(80px);
   transition: opacity 0.5s, transform 0.5s;
 }
 
 .animation-on-scroll.show {
-  opacity: 1; 
+  opacity: 1;
   transform: translateY(0);
 }
 
